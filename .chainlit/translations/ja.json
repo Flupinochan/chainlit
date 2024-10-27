@@ -1,0 +1,229 @@
+{
+    "components": {
+        "atoms": {
+            "buttons": {
+                "userButton": {
+                    "menu": {
+                        "settings": "設定",
+                        "settingsKey": "S",
+                        "APIKeys": "API キー",
+                        "logout": "ログアウト"
+                    }
+                }
+            }
+        },
+        "molecules": {
+            "newChatButton": {
+                "newChat": "新しいチャット"
+            },
+            "tasklist": {
+                "TaskList": {
+                    "title": "📝 タスクリスト",
+                    "loading": "読み込み中...",
+                    "error": "エラーが発生しました"
+                }
+            },
+            "attachments": {
+                "cancelUpload": "アップロードをキャンセル",
+                "removeAttachment": "添付ファイルを削除"
+            },
+            "newChatDialog": {
+                "createNewChat": "新しいチャットを作成しますか？",
+                "clearChat": "これにより現在のメッセージがクリアされ、新しいチャットが開始されます。",
+                "cancel": "キャンセル",
+                "confirm": "確認"
+            },
+            "settingsModal": {
+                "settings": "設定",
+                "expandMessages": "メッセージを展開",
+                "hideChainOfThought": "思考の連鎖を隠す",
+                "darkMode": "ダークモード"
+            },
+            "detailsButton": {
+                "using": "使用中",
+                "used": "使用済み"
+            },
+            "auth": {
+                "authLogin": {
+                    "title": "アプリにアクセスするためにログインしてください。",
+                    "form": {
+                        "email": "メールアドレス",
+                        "password": "パスワード",
+                        "noAccount": "アカウントをお持ちでないですか？",
+                        "alreadyHaveAccount": "すでにアカウントをお持ちですか？",
+                        "signup": "サインアップ",
+                        "signin": "サインイン",
+                        "or": "または",
+                        "continue": "続ける",
+                        "forgotPassword": "パスワードを忘れましたか？",
+                        "passwordMustContain": "パスワードには以下が含まれている必要があります：",
+                        "emailRequired": "メールは必須項目です",
+                        "passwordRequired": "パスワードは必須項目です"
+                    },
+                    "error": {
+                        "default": "サインインに失敗しました。",
+                        "signin": "別のアカウントでサインインを試みてください。",
+                        "oauthsignin": "別のアカウントでサインインを試みてください。",
+                        "redirect_uri_mismatch": "リダイレクトURIがOAuthアプリの設定と一致していません。",
+                        "oauthcallbackerror": "別のアカウントでサインインを試みてください。",
+                        "oauthcreateaccount": "別のアカウントでサインインを試みてください。",
+                        "emailcreateaccount": "別のアカウントでサインインを試みてください。",
+                        "callback": "別のアカウントでサインインを試みてください。",
+                        "oauthaccountnotlinked": "本人確認のため、元々使用したアカウントでサインインしてください。",
+                        "emailsignin": "メールを送信できませんでした。",
+                        "emailverify": "メールを確認してください。新しいメールが送信されました。",
+                        "credentialssignin": "サインインに失敗しました。提供された詳細が正しいことを確認してください。",
+                        "sessionrequired": "このページにアクセスするにはサインインしてください。"
+                    }
+                },
+                "authVerifyEmail": {
+                    "almostThere": "もう少しです！私たちはメールを送りました ",
+                    "verifyEmailLink": "そのメール内のリンクをクリックしてサインアップを完了してください。",
+                    "didNotReceive": "メールが見つかりませんか？",
+                    "resendEmail": "メールを再送信",
+                    "goBack": "戻る",
+                    "emailSent": "メールが正常に送信されました。",
+                    "verifyEmail": "メールアドレスを確認"
+                },
+                "providerButton": {
+                    "continue": "{{provider}}で続ける",
+                    "signup": "{{provider}}でサインアップ"
+                },
+                "authResetPassword": {
+                    "newPasswordRequired": "新しいパスワードは必須項目です",
+                    "passwordsMustMatch": "パスワードは一致する必要があります",
+                    "confirmPasswordRequired": "パスワード確認は必須項目です",
+                    "newPassword": "新しいパスワード",
+                    "confirmPassword": "パスワードを確認",
+                    "resetPassword": "パスワードをリセット"
+                },
+                "authForgotPassword": {
+                    "email": "メールアドレス",
+                    "emailRequired": "メールは必須項目です",
+                    "emailSent": "パスワードリセットの指示を含むメールを {{email}} に送信しました。",
+                    "enterEmail": "メールアドレスを入力してください。パスワードリセットの指示をお送りします。",
+                    "resendEmail": "メールを再送信",
+                    "continue": "続ける",
+                    "goBack": "戻る"
+                }
+            }
+        },
+        "organisms": {
+            "chat": {
+                "history": {
+                    "index": {
+                        "showHistory": "履歴を表示",
+                        "lastInputs": "最後の入力",
+                        "noInputs": "何もありません...",
+                        "loading": "読み込み中..."
+                    }
+                },
+                "inputBox": {
+                    "input": {
+                        "placeholder": "ここにメッセージを入力..."
+                    },
+                    "speechButton": {
+                        "start": "録音開始",
+                        "stop": "録音停止"
+                    },
+                    "SubmitButton": {
+                        "sendMessage": "メッセージを送信",
+                        "stopTask": "タスクを停止"
+                    },
+                    "UploadButton": {
+                        "attachFiles": "ファイルを添付"
+                    },
+                    "waterMark": {
+                        "text": "作成者"
+                    }
+                },
+                "Messages": {
+                    "index": {
+                        "running": "実行中",
+                        "executedSuccessfully": "正常に実行されました",
+                        "failed": "失敗しました",
+                        "feedbackUpdated": "フィードバックが更新されました",
+                        "updating": "更新中"
+                    }
+                },
+                "dropScreen": {
+                    "dropYourFilesHere": "ここにファイルをドロップ"
+                },
+                "index": {
+                    "failedToUpload": "アップロードに失敗しました",
+                    "cancelledUploadOf": "アップロードをキャンセルしました",
+                    "couldNotReachServer": "サーバーに到達できませんでした",
+                    "continuingChat": "前のチャットを続けています"
+                },
+                "settings": {
+                    "settingsPanel": "設定パネル",
+                    "reset": "リセット",
+                    "cancel": "キャンセル",
+                    "confirm": "確認"
+                }
+            },
+            "threadHistory": {
+                "sidebar": {
+                    "filters": {
+                        "FeedbackSelect": {
+                            "feedbackAll": "フィードバック：すべて",
+                            "feedbackPositive": "フィードバック：ポジティブ",
+                            "feedbackNegative": "フィードバック：ネガティブ"
+                        },
+                        "SearchBar": {
+                            "search": "検索"
+                        }
+                    },
+                    "DeleteThreadButton": {
+                        "confirmMessage": "このスレッドとそのメッセージおよび要素も削除されます。",
+                        "cancel": "キャンセル",
+                        "confirm": "確認",
+                        "deletingChat": "チャットを削除中",
+                        "chatDeleted": "チャットが削除されました"
+                    },
+                    "index": {
+                        "pastChats": "過去のチャット"
+                    },
+                    "ThreadList": {
+                        "empty": "空です...",
+                        "today": "今日",
+                        "yesterday": "昨日",
+                        "previous7days": "過去7日",
+                        "previous30days": "過去30日"
+                    },
+                    "TriggerButton": {
+                        "closeSidebar": "サイドバーを閉じる",
+                        "openSidebar": "サイドバーを開く"
+                    }
+                },
+                "Thread": {
+                    "backToChat": "チャットに戻る",
+                    "chatCreatedOn": "このチャットは作成されました"
+                }
+            },
+            "header": {
+                "chat": "チャット",
+                "readme": "README"
+            }
+        }
+    },
+    "hooks": {
+        "useLLMProviders": {
+            "failedToFetchProviders": "プロバイダーの取得に失敗しました："
+        }
+    },
+    "pages": {
+        "Design": {},
+        "Env": {
+            "savedSuccessfully": "正常に保存されました",
+            "requiredApiKeys": "必要なAPIキー",
+            "requiredApiKeysInfo": "このアプリを使用するには、以下のAPIキーを取得して設定してください。"
+        },
+        "Page": {
+            "notPartOfProject": "あなたはこのプロジェクトの一部ではありません。"
+        },
+        "ResumeButton": {
+            "resumeChat": "チャットを再開"
+        }
+    }
+}
